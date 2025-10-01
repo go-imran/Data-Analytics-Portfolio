@@ -14,8 +14,8 @@ This repository contains an **interactive Power BI dashboard** designed to help 
 
 ## Project Includes  
 - Power BI `.pbix` file  
-- Screenshots of dashboards  
-- Preview Link [](https://app.powerbi.com/view?r=eyJrIjoiNzgyOWZhYzctNzY0MC00NzI0LWFmNzMtYzc0ZjhmOGJhZTVhIiwidCI6IjYyMzUxZTMzLTA1YjktNDI0NS1hYzAwLTBhNzMwMzg4NDFlYiIsImMiOjEwfQ%3D%3D) 
+- PDF of Report  
+-  [Dashboard Preview](https://app.powerbi.com/view?r=eyJrIjoiNzgyOWZhYzctNzY0MC00NzI0LWFmNzMtYzc0ZjhmOGJhZTVhIiwidCI6IjYyMzUxZTMzLTA1YjktNDI0NS1hYzAwLTBhNzMwMzg4NDFlYiIsImMiOjEwfQ%3D%3D)
 
 ## Author  
 **Md. Imran** – *Data & Business Analyst*  
