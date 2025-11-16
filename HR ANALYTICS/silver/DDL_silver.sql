@@ -69,7 +69,8 @@ CREATE TABLE silver.hr_employee_data (
     RaceDesc                    NVARCHAR(100),
     MaritalDesc                 NVARCHAR(50),
     PerformanceScore            NVARCHAR(50),
-    CurrentEmployeeRating       DECIMAL(3,2)
+    CurrentEmployeeRating       DECIMAL(3,2),
+	dwh_create_date    DATETIME2 DEFAULT GETDATE()
 );
 PRINT 'Table silver.hr_employee_data created successfully.';
 GO
@@ -90,7 +91,8 @@ CREATE TABLE silver.hr_employee_engagement_survey_data (
     SurveyDate          DATE,
     EngagementScore     DECIMAL(4,2),
     SatisfactionScore   DECIMAL(4,2),
-    WorkLifeBalanceScore DECIMAL(4,2)
+    WorkLifeBalanceScore DECIMAL(4,2),
+	dwh_create_date    DATETIME2 DEFAULT GETDATE()
 );
 PRINT 'Table silver.hr_employee_engagement_survey_data created successfully.';
 GO
@@ -123,8 +125,11 @@ CREATE TABLE silver.hr_recruitment_data (
     EducationLevel      NVARCHAR(100),
     YearsOfExperience   DECIMAL(4,1),
     DesiredSalary       DECIMAL(10,2),
+	Status				NVARCHAR(200),
     JobTitle            NVARCHAR(100),
-    Status              TEXT
+	PrevJobDepartment   NVARCHAR(150),
+	Application_Status  NVARCHAR(100),
+	dwh_create_date    DATETIME2 DEFAULT GETDATE()
 );
 PRINT 'Table silver.hr_recruitment_data created successfully.';
 GO
@@ -149,7 +154,8 @@ CREATE TABLE silver.hr_employee_training (
     Location                NVARCHAR(100),
     Trainer                 NVARCHAR(100),
     TrainingDuration_Days   INT,
-    TrainingCost            DECIMAL(10,2)
+    TrainingCost            DECIMAL(10,2),
+	dwh_create_date    DATETIME2 DEFAULT GETDATE()
 );
 PRINT 'Table silver.hr_employee_training created successfully.';
 GO
