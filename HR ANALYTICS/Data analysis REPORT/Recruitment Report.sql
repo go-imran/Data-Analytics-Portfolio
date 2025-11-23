@@ -1,3 +1,20 @@
+-- ============================================================
+-- View: vw_hr_recruitment_data_Report
+-- Purpose: Creates a summarized Recruitment Report for HR.
+--
+-- Summary:
+-- This report brings all applicant information together and calculates
+-- useful scores such as education score, experience score, fit score,
+-- age advantage, and an overall candidate ranking score.
+--
+-- It also classifies candidates into categories (Strong, Good, Weak),
+-- assigns expected salary bands, and marks selected or rejected applicants.
+--
+-- HR Benefit:
+-- Helps HR quickly identify strong candidates, compare applicants fairly,
+-- and make better hiring decisions based on clear metrics.
+-- ============================================================
+
 IF OBJECT_ID('gold.vw_hr_recruitment_data_Report', 'V') IS NOT NULL
     DROP VIEW gold.vw_hr_recruitment_data_Report;
 GO
@@ -222,6 +239,7 @@ SELECT
 FROM gold.vw_hr_recruitment_data) recruitment_data)recruitment_data)recruitment_data;
 
 --SELECT distinct [Current Job Department] FROM GOLD.vw_hr_recruitment_data;
+
 
 
 select * from gold.vw_hr_recruitment_data_Report;
