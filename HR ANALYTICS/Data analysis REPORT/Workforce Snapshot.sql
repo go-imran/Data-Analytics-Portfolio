@@ -1,3 +1,18 @@
+-- ============================================================
+-- View: vw_employee_Data_Report
+-- Purpose:
+-- Creates a consolidated Employee Master Report for HR.
+--
+-- Summary:
+-- Includes employee demographics, tenure, performance, seniority,
+-- and multiple risk scoring models (tenure risk, age risk, performance risk).
+-- Generates Employee Lifetime Value, Seniority Level, and
+-- an overall Retention Risk Category.
+--
+-- HR Use:
+-- Helps identify high-value employees, detect retention risks early,
+-- and support data-driven workforce planning.
+-- ============================================================
 
 IF OBJECT_ID('gold.vw_employee_Data_Report', 'V') IS NOT NULL
     DROP VIEW gold.vw_employee_Data_Report;
@@ -102,3 +117,4 @@ FROM gold.vw_hr_employee_data
 GO
 
 select * from gold.vw_employee_Data_Report;
+
