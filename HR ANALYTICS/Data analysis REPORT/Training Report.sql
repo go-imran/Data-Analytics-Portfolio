@@ -1,3 +1,20 @@
+-- =========================================
+-- View: vw_hr_employee_training_Report
+-- Purpose: Generates a detailed Employee Training Report
+-- Summary:
+-- This report provides a comprehensive overview of all employee training programs,
+-- including details like training dates, trainers, outcomes, duration, costs, and effectiveness.
+-- Key metrics included:
+--   - Training Year, Month, and Quarter for time-based analysis
+--   - Completion and Pass flags for each employee
+--   - Training count per employee
+--   - Training duration in days and calculated hours
+--   - Cost per day for each training
+--   - Program popularity based on participation count
+--   - Trainer effectiveness based on ratio of successful outcomes
+-- This view helps HR managers track training participation, performance, cost efficiency,
+-- and trainer performance across the organization.
+-- =========================================
 
 IF OBJECT_ID('gold.vw_hr_employee_training_Report', 'V') IS NOT NULL
     DROP VIEW gold.vw_hr_employee_training_Report;
@@ -48,4 +65,5 @@ FROM gold.vw_hr_employee_training;
 GO
 
 SELECT * FROM gold.vw_hr_employee_training_Report;
+
 
