@@ -1,9 +1,15 @@
--- =========================================
+-- ============================================================
 -- View: vw_hr_employee_engagement_Report
--- Purpose: Generates a detailed Employee Engagement Report
--- Calculates engagement trends, improvement scores, flags, 
--- composite engagement risk score, and warnings for HR analysis
--- =========================================
+-- Purpose:
+-- Creates a full Employee Engagement Report for HR use.
+--
+-- Summary:
+-- Shows engagement, satisfaction, and work-life balance scores.
+-- Tracks whether each score is improving, declining, or stable.
+-- Adds improvement scores, trend labels, and risk indicators.
+-- Helps HR easily spot employees who may need support early.
+-- ============================================================
+
 SELECT 
 	[Employee ID],
 	[Employee Name],
@@ -38,3 +44,4 @@ ORDER BY [Employee ID],[Survey Date]
 
 
 --SELECT * FROM gold.vw_hr_employee_engagement;
+
