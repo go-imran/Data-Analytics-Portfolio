@@ -1,3 +1,9 @@
+-- =========================================
+-- View: vw_hr_employee_engagement_Report
+-- Purpose: Generates a detailed Employee Engagement Report
+-- Calculates engagement trends, improvement scores, flags, 
+-- composite engagement risk score, and warnings for HR analysis
+-- =========================================
 SELECT 
 	[Employee ID],
 	[Employee Name],
@@ -29,5 +35,6 @@ SELECT
 FROM gold.vw_hr_employee_engagement
 ORDER BY [Employee ID],[Survey Date]
 ;
+
 
 --SELECT * FROM gold.vw_hr_employee_engagement;
